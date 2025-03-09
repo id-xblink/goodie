@@ -1,0 +1,941 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\migrations\\20250309081047_adddefaultusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\migrations\\20250309081047_adddefaultusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\migrations\\20250307122800_updatelogintouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\migrations\\20250307122800_updatelogintouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\migrations\\20250223132200_updatetablecolumnrolefk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\migrations\\20250223132200_updatetablecolumnrolefk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\migrations\\20250223015558_addalltables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\migrations\\20250223015558_addalltables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\migrations\\20250220130348_addorderstatusanduserrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\migrations\\20250220130348_addorderstatusanduserrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\migrations\\20250219121336_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\migrations\\20250219121336_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\migrations\\20250227215036_restrictuserdeletion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\migrations\\20250227215036_restrictuserdeletion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\controllers\\userordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\controllers\\userordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\utils\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\utils\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\utils\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\utils\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\controllers\\orderstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\controllers\\orderstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\dtos\\updateorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\dtos\\updateorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\services\\userroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\services\\userroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\data\\entities\\productuserorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\data\\entities\\productuserorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\data\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\data\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\dtos\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\dtos\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\dtos\\productcategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\dtos\\productcategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\data\\entities\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\data\\entities\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\dtos\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\dtos\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\data\\entities\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\data\\entities\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\data\\entities\\userorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\data\\entities\\userorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\data\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\data\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\dtos\\orderresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\dtos\\orderresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\repositories\\userrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\repositories\\userrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\dtos\\userroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\dtos\\userroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\controllers\\productcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\controllers\\productcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\abstractions\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\abstractions\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\repositories\\iorderstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\repositories\\iorderstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\repositories\\iuserrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\repositories\\iuserrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\repositories\\orderstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\repositories\\orderstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\goodsandorders.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\goodsandorders.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|c:\\users\\kise\\desktop\\test\\goodsandorders\\goodsandorders\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948F05D-8D15-4FCF-9B85-506E31C074FD}|GoodsAndOrders\\GoodsAndOrders.csproj|solutionrelative:goodsandorders\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250223132200_UpdateTableColumnRoleFK.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250223132200_UpdateTableColumnRoleFK.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Migrations\\20250223132200_UpdateTableColumnRoleFK.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250223132200_UpdateTableColumnRoleFK.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Migrations\\20250223132200_UpdateTableColumnRoleFK.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:11:15.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250307122800_UpdateLoginToUser.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250307122800_UpdateLoginToUser.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Migrations\\20250307122800_UpdateLoginToUser.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250307122800_UpdateLoginToUser.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Migrations\\20250307122800_UpdateLoginToUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:10:59.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250309081047_AddDefaultUsers.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250309081047_AddDefaultUsers.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Migrations\\20250309081047_AddDefaultUsers.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250309081047_AddDefaultUsers.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Migrations\\20250309081047_AddDefaultUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:10:50.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250223015558_AddAllTables.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250223015558_AddAllTables.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Migrations\\20250223015558_AddAllTables.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250223015558_AddAllTables.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Migrations\\20250223015558_AddAllTables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T01:56:09.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250219121336_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250219121336_InitialCreate.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Migrations\\20250219121336_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250219121336_InitialCreate.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Migrations\\20250219121336_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T12:16:00.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Data\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\User.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Data\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:50:28.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250227215036_RestrictUserDeletion.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250227215036_RestrictUserDeletion.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Migrations\\20250227215036_RestrictUserDeletion.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250227215036_RestrictUserDeletion.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Migrations\\20250227215036_RestrictUserDeletion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:11:00.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250220130348_AddOrderStatusAndUserRole.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250220130348_AddOrderStatusAndUserRole.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Migrations\\20250220130348_AddOrderStatusAndUserRole.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\20250220130348_AddOrderStatusAndUserRole.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Migrations\\20250220130348_AddOrderStatusAndUserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:04:28.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwBYAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T18:04:46.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Utils\\JwtService.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Utils\\JwtService.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Utils\\JwtService.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Utils\\JwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T18:01:11.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Services\\OrderService.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Services\\OrderService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T12:27:11.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\UserController.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T10:27:44.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Utils\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Utils\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Utils\\PasswordHasher.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Utils\\PasswordHasher.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T13:58:23.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Services\\UserService.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Services\\UserService.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAtwBQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T10:25:14.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserOrderController.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\UserOrderController.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Controllers\\UserOrderController.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\UserOrderController.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Controllers\\UserOrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T12:28:15.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UpdateOrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\UpdateOrderDto.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\DTOs\\UpdateOrderDto.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\UpdateOrderDto.cs",
+              "RelativeToolTip": "GoodsAndOrders\\DTOs\\UpdateOrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T12:34:24.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderStatusController.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\OrderStatusController.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Controllers\\OrderStatusController.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\OrderStatusController.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Controllers\\OrderStatusController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:33:14.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA6wCMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T11:29:29.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Data\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\Product.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Data\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:30:52.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Services\\ProductService.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Services\\ProductService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAawDUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T11:23:35.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\DTOs\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "GoodsAndOrders\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T13:07:09.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Services\\UserRoleService.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Services\\UserRoleService.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Services\\UserRoleService.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Services\\UserRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:41:18.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProductCategoryDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\ProductCategoryDto.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\DTOs\\ProductCategoryDto.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\ProductCategoryDto.cs",
+              "RelativeToolTip": "GoodsAndOrders\\DTOs\\ProductCategoryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T12:09:46.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProductUserOrder.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\ProductUserOrder.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Data\\Entities\\ProductUserOrder.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\ProductUserOrder.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Data\\Entities\\ProductUserOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:57:49.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UpdateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\UpdateUserDto.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\DTOs\\UpdateUserDto.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\UpdateUserDto.cs",
+              "RelativeToolTip": "GoodsAndOrders\\DTOs\\UpdateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T13:35:33.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\ProductDto.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\DTOs\\ProductDto.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\ProductDto.cs",
+              "RelativeToolTip": "GoodsAndOrders\\DTOs\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T11:16:07.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UpdateProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\UpdateProductDto.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\DTOs\\UpdateProductDto.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\UpdateProductDto.cs",
+              "RelativeToolTip": "GoodsAndOrders\\DTOs\\UpdateProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T19:37:02.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ProductCategory.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\ProductCategory.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Data\\Entities\\ProductCategory.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\ProductCategory.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Data\\Entities\\ProductCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:30:08.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "GoodsAndOrders\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T14:27:29.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserRoleController.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\UserRoleController.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Controllers\\UserRoleController.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\UserRoleController.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Controllers\\UserRoleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:38:46.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Services\\CategoryService.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Services\\CategoryService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowD0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T12:10:57.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HealthController.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\HealthController.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Controllers\\HealthController.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\HealthController.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Controllers\\HealthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T17:05:57.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Data\\Entities\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\OrderStatus.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Data\\Entities\\OrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:34:43.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UserResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\UserResponseDto.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\DTOs\\UserResponseDto.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\UserResponseDto.cs",
+              "RelativeToolTip": "GoodsAndOrders\\DTOs\\UserResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T20:39:21.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UserOrder.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\UserOrder.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Data\\Entities\\UserOrder.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\UserOrder.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Data\\Entities\\UserOrder.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCIAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:50:12.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CreateOrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\CreateOrderDto.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\DTOs\\CreateOrderDto.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\CreateOrderDto.cs",
+              "RelativeToolTip": "GoodsAndOrders\\DTOs\\CreateOrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T12:26:16.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\UserRole.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Data\\Entities\\UserRole.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\Entities\\UserRole.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Data\\Entities\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:34:53.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAIA3wD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T11:49:23.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Data\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T15:28:02.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\OrderDto.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\DTOs\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\OrderDto.cs",
+              "RelativeToolTip": "GoodsAndOrders\\DTOs\\OrderDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T13:33:30.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "OrderResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\OrderResponseDto.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\DTOs\\OrderResponseDto.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\OrderResponseDto.cs",
+              "RelativeToolTip": "GoodsAndOrders\\DTOs\\OrderResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T13:51:54.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "UserRoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Repositories\\UserRoleRepository.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Repositories\\UserRoleRepository.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Repositories\\UserRoleRepository.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Repositories\\UserRoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:11:15.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UserRoleDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\UserRoleDto.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\DTOs\\UserRoleDto.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\DTOs\\UserRoleDto.cs",
+              "RelativeToolTip": "GoodsAndOrders\\DTOs\\UserRoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:43:34.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Program.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Program.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Program.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAlwDMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T11:50:55.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ProductCategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\ProductCategoryController.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Controllers\\ProductCategoryController.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\ProductCategoryController.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Controllers\\ProductCategoryController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T12:13:18.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T11:30:11.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\appsettings.json",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\appsettings.json",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\appsettings.json",
+              "RelativeToolTip": "GoodsAndOrders\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-19T11:49:58.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IOrderStatusRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Repositories\\IOrderStatusRepository.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Repositories\\IOrderStatusRepository.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Repositories\\IOrderStatusRepository.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Repositories\\IOrderStatusRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:10:47.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Abstractions\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Abstractions\\Repositories\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Abstractions\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Abstractions\\Repositories\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T13:54:30.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T13:55:39.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IUserRoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Repositories\\IUserRoleRepository.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Repositories\\IUserRoleRepository.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Repositories\\IUserRoleRepository.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Repositories\\IUserRoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:11:06.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Properties\\launchSettings.json",
+              "RelativeToolTip": "GoodsAndOrders\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-25T13:15:36.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "OrderStatusRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Repositories\\OrderStatusRepository.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Repositories\\OrderStatusRepository.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Repositories\\OrderStatusRepository.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Repositories\\OrderStatusRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:10:56.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "GoodsAndOrders\\UnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T14:25:47.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "GoodsAndOrders.csproj",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\GoodsAndOrders.csproj",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\GoodsAndOrders.csproj",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\GoodsAndOrders.csproj",
+              "RelativeToolTip": "GoodsAndOrders\\GoodsAndOrders.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-19T11:49:01.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\WeatherForecast.cs",
+              "RelativeToolTip": "GoodsAndOrders\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:03:02.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "GoodsAndOrders\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Kise\\Desktop\\test\\GoodsAndOrders\\GoodsAndOrders\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "GoodsAndOrders\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T12:16:03.194Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,795 @@
+﻿CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    migration_id character varying(150) NOT NULL,
+    product_version character varying(32) NOT NULL,
+    CONSTRAINT pk___ef_migrations_history PRIMARY KEY (migration_id)
+);
+
+START TRANSACTION;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250219121336_InitialCreate') THEN
+    INSERT INTO "__EFMigrationsHistory" (migration_id, product_version)
+    VALUES ('20250219121336_InitialCreate', '9.0.2');
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250220130348_AddOrderStatusAndUserRole') THEN
+    CREATE TABLE order_statuses (
+        "Id" uuid NOT NULL,
+        "Name" character varying(20) NOT NULL,
+        CONSTRAINT "PK_order_statuses" PRIMARY KEY ("Id")
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250220130348_AddOrderStatusAndUserRole') THEN
+    CREATE TABLE user_roles (
+        "Id" uuid NOT NULL,
+        "Name" character varying(20) NOT NULL,
+        CONSTRAINT "PK_user_roles" PRIMARY KEY ("Id")
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250220130348_AddOrderStatusAndUserRole') THEN
+    INSERT INTO "__EFMigrationsHistory" (migration_id, product_version)
+    VALUES ('20250220130348_AddOrderStatusAndUserRole', '9.0.2');
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223015558_AddAllTables') THEN
+    CREATE TABLE product_categories (
+        "Id" uuid NOT NULL,
+        "Name" character varying(30) NOT NULL,
+        CONSTRAINT "PK_product_categories" PRIMARY KEY ("Id")
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223015558_AddAllTables') THEN
+    CREATE TABLE users (
+        "Id" uuid NOT NULL,
+        "Name" character varying(30) NOT NULL,
+        "Code" character varying(9) NOT NULL,
+        "Address" character varying(200) NOT NULL,
+        "Discount" integer NOT NULL,
+        "CustomerId" uuid,
+        "UserRoleId" uuid,
+        CONSTRAINT "PK_users" PRIMARY KEY ("Id"),
+        CONSTRAINT "FK_users_user_roles_UserRoleId" FOREIGN KEY ("UserRoleId") REFERENCES user_roles ("Id"),
+        CONSTRAINT "FK_users_users_CustomerId" FOREIGN KEY ("CustomerId") REFERENCES users ("Id")
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223015558_AddAllTables') THEN
+    CREATE TABLE products (
+        "Id" uuid NOT NULL,
+        "Name" character varying(20) NOT NULL,
+        "Code" character varying(12) NOT NULL,
+        "Price" numeric(18,2) NOT NULL,
+        "CategoryId" uuid NOT NULL,
+        CONSTRAINT "PK_products" PRIMARY KEY ("Id"),
+        CONSTRAINT "FK_products_product_categories_CategoryId" FOREIGN KEY ("CategoryId") REFERENCES product_categories ("Id") ON DELETE CASCADE
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223015558_AddAllTables') THEN
+    CREATE TABLE user_orders (
+        "Id" uuid NOT NULL,
+        "OrderDate" TIMESTAMP NOT NULL,
+        "ShipmentDate" TIMESTAMP NOT NULL,
+        "OrderNumber" integer NOT NULL,
+        "CustomerId" uuid NOT NULL,
+        "StatusId" uuid NOT NULL,
+        CONSTRAINT "PK_user_orders" PRIMARY KEY ("Id"),
+        CONSTRAINT "FK_user_orders_order_statuses_StatusId" FOREIGN KEY ("StatusId") REFERENCES order_statuses ("Id") ON DELETE CASCADE,
+        CONSTRAINT "FK_user_orders_users_CustomerId" FOREIGN KEY ("CustomerId") REFERENCES users ("Id") ON DELETE CASCADE
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223015558_AddAllTables') THEN
+    CREATE TABLE products_user_orders (
+        "Id" uuid NOT NULL,
+        "ProductId" uuid NOT NULL,
+        "UserOrderId" uuid NOT NULL,
+        "ProductCount" integer NOT NULL,
+        "Product_Price" numeric(18,2) NOT NULL,
+        CONSTRAINT "PK_products_user_orders" PRIMARY KEY ("Id"),
+        CONSTRAINT "FK_products_user_orders_products_ProductId" FOREIGN KEY ("ProductId") REFERENCES products ("Id") ON DELETE CASCADE,
+        CONSTRAINT "FK_products_user_orders_user_orders_UserOrderId" FOREIGN KEY ("UserOrderId") REFERENCES user_orders ("Id") ON DELETE CASCADE
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223015558_AddAllTables') THEN
+    CREATE INDEX "IX_products_CategoryId" ON products ("CategoryId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223015558_AddAllTables') THEN
+    CREATE INDEX "IX_products_user_orders_ProductId" ON products_user_orders ("ProductId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223015558_AddAllTables') THEN
+    CREATE INDEX "IX_products_user_orders_UserOrderId" ON products_user_orders ("UserOrderId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223015558_AddAllTables') THEN
+    CREATE INDEX "IX_user_orders_CustomerId" ON user_orders ("CustomerId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223015558_AddAllTables') THEN
+    CREATE INDEX "IX_user_orders_StatusId" ON user_orders ("StatusId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223015558_AddAllTables') THEN
+    CREATE INDEX "IX_users_CustomerId" ON users ("CustomerId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223015558_AddAllTables') THEN
+    CREATE INDEX "IX_users_UserRoleId" ON users ("UserRoleId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223015558_AddAllTables') THEN
+    INSERT INTO "__EFMigrationsHistory" (migration_id, product_version)
+    VALUES ('20250223015558_AddAllTables', '9.0.2');
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products DROP CONSTRAINT "FK_products_product_categories_CategoryId";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products_user_orders DROP CONSTRAINT "FK_products_user_orders_products_ProductId";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products_user_orders DROP CONSTRAINT "FK_products_user_orders_user_orders_UserOrderId";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_orders DROP CONSTRAINT "FK_user_orders_order_statuses_StatusId";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_orders DROP CONSTRAINT "FK_user_orders_users_CustomerId";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE users DROP CONSTRAINT "FK_users_user_roles_UserRoleId";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE users DROP CONSTRAINT "FK_users_users_CustomerId";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE users DROP CONSTRAINT "PK_users";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_roles DROP CONSTRAINT "PK_user_roles";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_orders DROP CONSTRAINT "PK_user_orders";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products_user_orders DROP CONSTRAINT "PK_products_user_orders";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products DROP CONSTRAINT "PK_products";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE product_categories DROP CONSTRAINT "PK_product_categories";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE order_statuses DROP CONSTRAINT "PK_order_statuses";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE users RENAME COLUMN "Name" TO name;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE users RENAME COLUMN "Discount" TO discount;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE users RENAME COLUMN "Code" TO code;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE users RENAME COLUMN "Address" TO address;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE users RENAME COLUMN "Id" TO id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE users RENAME COLUMN "UserRoleId" TO user_role_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE users RENAME COLUMN "CustomerId" TO customer_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER INDEX "IX_users_UserRoleId" RENAME TO ix_users_user_role_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER INDEX "IX_users_CustomerId" RENAME TO ix_users_customer_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_roles RENAME COLUMN "Name" TO name;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_roles RENAME COLUMN "Id" TO id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_orders RENAME COLUMN "Id" TO id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_orders RENAME COLUMN "StatusId" TO status_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_orders RENAME COLUMN "ShipmentDate" TO shipment_date;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_orders RENAME COLUMN "OrderNumber" TO order_number;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_orders RENAME COLUMN "OrderDate" TO order_date;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_orders RENAME COLUMN "CustomerId" TO customer_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER INDEX "IX_user_orders_StatusId" RENAME TO ix_user_orders_status_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER INDEX "IX_user_orders_CustomerId" RENAME TO ix_user_orders_customer_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products_user_orders RENAME COLUMN "Product_Price" TO product_price;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products_user_orders RENAME COLUMN "Id" TO id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products_user_orders RENAME COLUMN "UserOrderId" TO user_order_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products_user_orders RENAME COLUMN "ProductId" TO product_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products_user_orders RENAME COLUMN "ProductCount" TO product_count;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER INDEX "IX_products_user_orders_UserOrderId" RENAME TO ix_products_user_orders_user_order_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER INDEX "IX_products_user_orders_ProductId" RENAME TO ix_products_user_orders_product_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products RENAME COLUMN "Price" TO price;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products RENAME COLUMN "Name" TO name;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products RENAME COLUMN "Code" TO code;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products RENAME COLUMN "Id" TO id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products RENAME COLUMN "CategoryId" TO category_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER INDEX "IX_products_CategoryId" RENAME TO ix_products_category_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE product_categories RENAME COLUMN "Name" TO name;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE product_categories RENAME COLUMN "Id" TO id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE order_statuses RENAME COLUMN "Name" TO name;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE order_statuses RENAME COLUMN "Id" TO id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE users ADD CONSTRAINT pk_users PRIMARY KEY (id);
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_roles ADD CONSTRAINT pk_user_roles PRIMARY KEY (id);
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_orders ADD CONSTRAINT pk_user_orders PRIMARY KEY (id);
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products_user_orders ADD CONSTRAINT pk_products_user_orders PRIMARY KEY (id);
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products ADD CONSTRAINT pk_products PRIMARY KEY (id);
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE product_categories ADD CONSTRAINT pk_product_categories PRIMARY KEY (id);
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE order_statuses ADD CONSTRAINT pk_order_statuses PRIMARY KEY (id);
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products ADD CONSTRAINT fk_products_product_category_category_id FOREIGN KEY (category_id) REFERENCES product_categories (id) ON DELETE CASCADE;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products_user_orders ADD CONSTRAINT fk_products_user_orders_products_product_id FOREIGN KEY (product_id) REFERENCES products (id) ON DELETE CASCADE;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE products_user_orders ADD CONSTRAINT fk_products_user_orders_user_order_user_order_id FOREIGN KEY (user_order_id) REFERENCES user_orders (id) ON DELETE CASCADE;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_orders ADD CONSTRAINT fk_user_orders_order_statuses_status_id FOREIGN KEY (status_id) REFERENCES order_statuses (id) ON DELETE CASCADE;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE user_orders ADD CONSTRAINT fk_user_orders_users_customer_id FOREIGN KEY (customer_id) REFERENCES users (id) ON DELETE CASCADE;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE users ADD CONSTRAINT fk_users_user_roles_user_role_id FOREIGN KEY (user_role_id) REFERENCES user_roles (id);
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    ALTER TABLE users ADD CONSTRAINT fk_users_users_customer_id FOREIGN KEY (customer_id) REFERENCES users (id);
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223020055_RenameTablesToSnakeCase') THEN
+    INSERT INTO "__EFMigrationsHistory" (migration_id, product_version)
+    VALUES ('20250223020055_RenameTablesToSnakeCase', '9.0.2');
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223112110_UpdateDatabaseSchema') THEN
+    ALTER TABLE products DROP CONSTRAINT fk_products_product_category_category_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223112110_UpdateDatabaseSchema') THEN
+    ALTER TABLE products_user_orders DROP CONSTRAINT fk_products_user_orders_user_order_user_order_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223112110_UpdateDatabaseSchema') THEN
+    ALTER TABLE users DROP CONSTRAINT fk_users_user_roles_user_role_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223112110_UpdateDatabaseSchema') THEN
+    ALTER TABLE products ADD CONSTRAINT fk_products_product_categories_category_id FOREIGN KEY (category_id) REFERENCES product_categories (id) ON DELETE CASCADE;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223112110_UpdateDatabaseSchema') THEN
+    ALTER TABLE products_user_orders ADD CONSTRAINT fk_products_user_orders_user_orders_user_order_id FOREIGN KEY (user_order_id) REFERENCES user_orders (id) ON DELETE CASCADE;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223112110_UpdateDatabaseSchema') THEN
+    ALTER TABLE users ADD CONSTRAINT fk_users_user_roles_user_role_id FOREIGN KEY (user_role_id) REFERENCES user_roles (id) ON DELETE RESTRICT;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223112110_UpdateDatabaseSchema') THEN
+    INSERT INTO "__EFMigrationsHistory" (migration_id, product_version)
+    VALUES ('20250223112110_UpdateDatabaseSchema', '9.0.2');
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223113618_UpdateTableColumn') THEN
+    INSERT INTO "__EFMigrationsHistory" (migration_id, product_version)
+    VALUES ('20250223113618_UpdateTableColumn', '9.0.2');
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223122542_UpdateTableColumnUserOrder') THEN
+    INSERT INTO "__EFMigrationsHistory" (migration_id, product_version)
+    VALUES ('20250223122542_UpdateTableColumnUserOrder', '9.0.2');
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223131815_UpdateTableColumnUserPassword') THEN
+    ALTER TABLE users ADD password_hash character varying(255) NOT NULL DEFAULT '';
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223131815_UpdateTableColumnUserPassword') THEN
+    INSERT INTO "__EFMigrationsHistory" (migration_id, product_version)
+    VALUES ('20250223131815_UpdateTableColumnUserPassword', '9.0.2');
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223132200_UpdateTableColumnRoleFK') THEN
+    UPDATE users SET user_role_id = '00000000-0000-0000-0000-000000000000' WHERE user_role_id IS NULL;
+    ALTER TABLE users ALTER COLUMN user_role_id SET NOT NULL;
+    ALTER TABLE users ALTER COLUMN user_role_id SET DEFAULT '00000000-0000-0000-0000-000000000000';
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250223132200_UpdateTableColumnRoleFK') THEN
+    INSERT INTO "__EFMigrationsHistory" (migration_id, product_version)
+    VALUES ('20250223132200_UpdateTableColumnRoleFK', '9.0.2');
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250226142629_NullObjectCorrection') THEN
+    ALTER TABLE user_orders ALTER COLUMN order_number DROP DEFAULT;
+    ALTER TABLE user_orders ALTER COLUMN order_number ADD GENERATED BY DEFAULT AS IDENTITY;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250226142629_NullObjectCorrection') THEN
+    INSERT INTO "__EFMigrationsHistory" (migration_id, product_version)
+    VALUES ('20250226142629_NullObjectCorrection', '9.0.2');
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250226144042_FixDateTimeZone') THEN
+    ALTER TABLE user_orders ALTER COLUMN shipment_date TYPE timestamp with time zone;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250226144042_FixDateTimeZone') THEN
+    ALTER TABLE user_orders ALTER COLUMN order_date TYPE timestamp with time zone;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250226144042_FixDateTimeZone') THEN
+    INSERT INTO "__EFMigrationsHistory" (migration_id, product_version)
+    VALUES ('20250226144042_FixDateTimeZone', '9.0.2');
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250226164933_AddCascadeDelete') THEN
+    ALTER TABLE products_user_orders DROP CONSTRAINT fk_products_user_orders_user_orders_user_order_id;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250226164933_AddCascadeDelete') THEN
+    ALTER TABLE products_user_orders ADD CONSTRAINT fk_products_user_orders_user_orders_user_order_id FOREIGN KEY (user_order_id) REFERENCES user_orders (id) ON DELETE RESTRICT;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "migration_id" = '20250226164933_AddCascadeDelete') THEN
+    INSERT INTO "__EFMigrationsHistory" (migration_id, product_version)
+    VALUES ('20250226164933_AddCascadeDelete', '9.0.2');
+    END IF;
+END $EF$;
+COMMIT;
+
